@@ -1,0 +1,6 @@
+{
+  "name": "EventBid",
+  "description": "Event e-procurement and bidding marketplace platform connecting event organizers with verified event vendors across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

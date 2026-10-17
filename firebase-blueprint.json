@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "User": {
+      "path": "users/{userId}",
+      "fields": {
+        "fullName": { "type": "string" },
+        "role": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "isPremium": { "type": "boolean" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "Event": {
+      "path": "events/{eventId}",
+      "fields": {
+        "customerId": { "type": "string" },
+        "title": { "type": "string" },
+        "eventType": { "type": "string" },
+        "city": { "type": "string" },
+        "estimatedBudget": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      }
+    },
+    "Bid": {
+      "path": "bids/{bidId}",
+      "fields": {
+        "eventId": { "type": "string" },
+        "vendorId": { "type": "string" },
+        "price": { "type": "number" },
+        "status": { "type": "string" },
+        "submittedAt": { "type": "timestamp" }
+      }
+    },
+    "Ticket": {
+      "path": "tickets/{ticketId}",
+      "fields": {
+        "eventId": { "type": "string" },
+        "userId": { "type": "string" },
+        "quantity": { "type": "number" },
+        "totalPaid": { "type": "number" },
+        "bookedAt": { "type": "timestamp" }
+      }
+    }
+  }
+}
